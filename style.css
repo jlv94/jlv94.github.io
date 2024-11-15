@@ -79,6 +79,11 @@ footer {
     width: 100%;
 }
 
+#contact {
+    text-align: center;
+    padding: 20px;
+}
+
 /* Mega Menu Styles */
 nav {
     background: #3c6997; /* Updated to the specified blue */
