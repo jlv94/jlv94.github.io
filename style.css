@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: #3c6997; /* Updated to the specified blue */
+    background: #3c6997;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -16,7 +16,7 @@ header {
 
 h1, h2, h3 {
     margin: 0;
-    font-weight: bold; /* Make headers bold */
+    font-weight: bold;
 }
 
 h1 {
@@ -28,11 +28,11 @@ h2 {
 }
 
 h3 {
-    color: #3c6997; /* Updated to the specified blue */
+    color: #3c6997;
 }
 
 section {
-    padding: 20px;
+    padding: 200px;
     margin: 20px auto;
     max-width: 800px;
     background: #fff;
