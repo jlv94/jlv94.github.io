@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -8,20 +8,27 @@ body {
 }
 
 header {
-    background: #007BFF;
+    background: #3c6997; /* Updated to the specified blue */
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
-h1 {
+h1, h2, h3 {
     margin: 0;
+    font-weight: bold; /* Make headers bold */
+}
+
+h1 {
     font-size: 2.5em;
 }
 
 h2 {
-    margin: 0;
     font-size: 1.5em;
+}
+
+h3 {
+    color: #3c6997; /* Updated to the specified blue */
 }
 
 section {
@@ -31,10 +38,6 @@ section {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h3 {
-    color: #007BFF;
 }
 
 form {
@@ -55,23 +58,82 @@ input, textarea {
 
 button {
     padding: 10px;
-    background: #007BFF;
+    background: #3c6997; /* Updated to the specified blue */
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #2a4d66; /* Darker shade for hover effect */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #007BFF;
+    background: #3c6997; /* Updated to the specified blue */
     color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Mega Menu Styles */
+nav {
+    background: #3c6997; /* Updated to the specified blue */
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover > a {
+    background: #2a4d66; /* Darker shade for hover effect */
+}
+
+nav ul li:hover .mega-menu {
+    display: block; /* Show mega menu on hover */
+}
+
+.mega-menu {
+    display: none; /* Hide mega menu by default */
+    position: absolute;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    top: 100%; /* Position below the parent */
+    left: 0;
+    z-index: 1000;
+}
+
+.mega-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.mega-menu ul li {
+    margin: 10px 0;
+}
+
+.mega-menu ul li a {
+    color: #3c6997; /* Link color in mega menu */
 }
