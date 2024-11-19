@@ -17,7 +17,7 @@ document.getElementById('send-contact-form').addEventListener('submit', function
     };
 
     // Send data to Google Sheets via the Apps Script URL
-    fetch('https://script.google.com/macros/s/AKfycbx20DUs04_hTXoAWgkzjv2-9MFUlqlEFrg5lWkUKFATo56TawRUmsGrUKKtqqPQ0WQm/exec', 
+    fetch('https://script.google.com/macros/s/AKfycbyZworXwHYZ_n_GultuD0Dg2IrlJWOyAYuhKYcn7kYZvUaGrAWgBRYICq1FShxOxMop/exec', 
     {
         method: 'POST',
         headers: {
