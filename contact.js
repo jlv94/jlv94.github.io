@@ -4,7 +4,7 @@ document.getElementById('send-contact-form').addEventListener('submit', function
     // Gather form data
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
-    const company = document.getElementsById('company').value;
+    const company = document.getElementById('company').value;
     const message = document.getElementById('message').value;
 
     // Prepare data to send
@@ -12,12 +12,12 @@ document.getElementById('send-contact-form').addEventListener('submit', function
         name: name,
         email: email,
         company: company,
-        message: message
+        message: message,
         date: new Date().toISOString()
     };
 
     // Send data to Google Sheets via the Apps Script URL
-    fetch('https://script.google.com/macros/s/AKfycbyHNZ4l0DAB9cPNPsZ-SPwqds67RSzQCiEnhLpbpPYJ7qpr7Hp-u5lq7RfuXUpxjgvJ/exec', 
+    fetch('https://script.google.com/macros/s/AKfycbx20DUs04_hTXoAWgkzjv2-9MFUlqlEFrg5lWkUKFATo56TawRUmsGrUKKtqqPQ0WQm/exec', 
     {
         method: 'POST',
         headers: {
@@ -29,7 +29,7 @@ document.getElementById('send-contact-form').addEventListener('submit', function
     .then(data => {
         console.log('Success:', data);
         alert('Thank you for your message, ' + name + '! I will get back to you soon.');
-        this.reset(); // Reset the form
+        //this.reset(); // Reset the form
     })
     .catch((error) => {
         console.error('Error:', error);
