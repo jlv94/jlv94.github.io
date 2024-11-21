@@ -46,17 +46,20 @@
                     window.location.href = 'https://jlv94.github.io/#contact-form';
 
                     // Show success message
-                    const successMessage = document.createElement("p");
-                    successMessage.textContent = "Your request has been sent successfully! We'll get back to you soon.";
-                    successMessage.style.colr = "green";
-                    form.parentNode.insertBefore(successMessage, form);
-                    
+                    const modal = document.getElementById('successModal');
+                    modal.style.display = 'block';
+
                 } else {
                     console.error('Form submission failed:', response.statusText);
                 }
             } catch (error) {
                 console.error('Error submitting form:', error);
             }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('successModal');
+            modal.style.display = 'none';
         }
   </script>
 
@@ -272,6 +275,14 @@
             </form>
         </div>
     </section>
+    
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Your request has been sent successfully!</p>
+        </div>
+    </div>
 
 <footer>
     <div class="footer-container" style="display: flex; align-items: flex-start;">
