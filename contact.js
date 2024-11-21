@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         // Send data to Google Sheets via the Apps Script URL
-        fetch('https://script.google.com/macros/s/AKfycbyza5CBRbmtu7bu30ZpSvWjApVJNbpLRRzdJNMaWnAYYFt0J9f4iMyHNnAvc1sauKFk/exec', 
+        fetch('https://script.google.com/macros/s/AKfycbwzTDOojW6EES3oYEZstohXI_fpAu2EVrVKij7xvg3h8M8PqV1kVgwVUWRLJl-geL_G/exec', 
         {
             method: 'POST',
             headers: {
