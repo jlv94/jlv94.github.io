@@ -18,8 +18,9 @@
         gtag('js', new Date());
         gtag('config', 'YOUR_GA_TRACKING_ID');
     </script>
-    <!-- Contact Form -->
-    <script src="form.js"></script>
+    <!-- JavaScript Files -->
+    <script src="js/form.js"></script>
+    <script src="js/faq_open.js"></script>
 </head>
 <!--
 <nav>
@@ -268,14 +269,5 @@
         <p>&copy; <script>document.write(new Date().getFullYear());</script> EFTE Inc. All rights reserved.</p>
     </div>
 </footer>
-
-<script type="text/javascript">document.querySelectorAll('.faq-question').forEach(question => {
-    question.addEventListener('click', () => {
-        const answer = question.nextElementSibling;
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-    });
-});
-</script>
-
 </body>
 </html>
