@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="version" content="1.000.01">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fractional CMO services to elevate your marketing strategy and drive business growth.">
-    <meta name="keywords" content="Fractional CMO, Marketing Strategy, Business Growth, Marketing Consultant, E-Commerce Optimization, Data Analytics, Reporting, PIM">
-    <meta name="author" content="EFTE Business-Data-Decisions">
-    <title>Jonathan Verschaeve - fractional CMO</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="Digital Makina, Fractional CMO, Marketing Strategy, Business Growth, Marketing Consultant, E-Commerce Optimization, Data Analytics, Reporting, PIM">
+    <meta name="author" content="Digital Makina Growth Analytics Automation">
+    <title>TEST</title>
+    <link rel="stylesheet" href="test-style.css">
     <!-- Social Media Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google Analytics -->
@@ -21,253 +22,328 @@
     <!-- JavaScript Files -->
     <script src="js/form.js"></script>
     <script src="js/faq_open.js"></script>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.navigation');
+            var toggleButton = document.querySelector('.toggle-hamburger-menu');
+            var body = document.body;
+
+            menu.classList.toggle('show');
+
+            if (menu.classList.contains('show')) {
+                toggleButton.innerHTML = '<i class="fa fa-times"></i>'; // Change to cross icon
+                body.classList.add("no-scroll");
+            } else {
+                toggleButton.innerHTML = '<i class="fa fa-bars"></i>'; // Change back to bars icon
+                body.classList.remove("no-scroll");
+            }
+        }
+    </script>
 </head>
-<!--
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li>
-            <a href="#">Services</a>
-            <div class="mega-menu">
-                <ul>
-                    <li><a href="#">Service 1</a></li>
-                    <li><a href="#">Service 2</a></li>
-                    <li><a href="#">Service 3</a></li>
-                </ul>
-            </div>
-        </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
--->
-<body>
-    <object class="section-object" type="image/svg+xml" data="assets/banner_pattern.svg" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; overflow: hidden; z-index: 0;">
-    </object>
-    <section id="banner-fractional-cmo" style="position: relative; height: 400px; display: flex; align-items: center; justify-content: center; text-align: center; color: #333;">
-        <div style="position: relative; z-index: 1;">
-            <h1>Unlock growth for your business with a fractional CMO</h1>
-            <h2>Turn your marketing challenges into opportunites!</h2>
-            <h3 style="margin-top: 20px;">Are you a small to medium-sized business owner facing marketing challenges?<br>Access top-tier expertise and execution with a fractional Chief Marketing Officer, without the overhead of a full-time executive.</h3>
-            <p class="caption-banner">E-Commerce Conversion&ensp;&mdash;&ensp;Digital Marketing&ensp;&mdash;&ensp;Data Analytics & Reporting&ensp;&mdash;&ensp;Work Automation</p>
-            <button onclick="window.location.href='#contact-form'"; style="margin-top: 20px;">Book a Free Discovery Call</button>
+
+<menu>
+    <div class="menu">
+        <object class="logo" type="image/svg+xml" data="assets/digital_makina_logo.svg"></object>
+        <div class="toggle-hamburger-menu" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
         </div>
-    </section>
-
-    <section id="services-expertise">
-        <h2>Fractional CMO services and expertise</h2>
-        <h3>Businesses face unique challenges in marketing strategy and execution, e-commerce conversion or accessing company data to leverage customer dollar-value.
-            <br>These hot topics limit your potential to grow and refrain you from excelling in a very competitive marketplace. </h3>
-        <h3 style="font-weight: bold; margin-top: 20p;x">We can help you lead, implement and execute projects to foster growth!</h3>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">
-                    <span class="raphael--dollar"></span>
-                </div>
-                <h3 class="service-card-title">Conversion Rate Optimization (CRO)</h3>
-                <h4 class="service-card-subtitle">Drive revenue, optimize conversion rate and improve users experience of your e-commerce website</h4>
-                <ul class="service-card-list">
-                    <li>Drive engagement at main web pages: home page, landing page, product page</li>
-                    <li>Optimize conversion funnel and basket</li>
-                    <li>Improve website speed and performance</li>
-                    <li>Implement customization and increase user experience</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                 <div class="service-icon">
-                    <span class="nimbus--marketing"></span>
-                </div>
-                <h3 class="service-card-title">Digital Marketing</h3>
-                <h4 class="service-card-subtitle">Convert leads into loyal customers by leveraging various digital channels with targeted and cost-effective campaigns</h4>
-                <ul class="service-card-list">
-                    <li>Organic traffic: invest in a compelling SEO and Search strategy and improve your website ranking</li>
-                    <li>Cost-effective paid traffic: improve your ROAS on paid traffic (SEA) and social media traffic</li>
-                    <li>Email traffic: increase conversion rate, optimized segmentation, build campaigns automation&mdash;and more</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <span class="logos--segment-icon"></span>
-                </div>
-                <h3 class="service-card-title">Customer Value Optimization (CVO)</h3>
-                <h4 class="service-card-subtitle">Segment and understand your customer base, leverage a customized offering to increase your customer dollar-value</h4>
-                <ul class="service-card-list">
-                    <li>Increase your AOV&mdash;Average Order Value</li>
-                    <li>Improve retention rate and loyalty</li>
-                    <li>Understand your customers better with data-driven segmentation</li>
-                    <li>Implement customer reviews strategy</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <span class="fluent-mdl2--report-add"></span>
-                </div>
-                <h3 class="service-card-title">Analytics, Reporting and Visualization</h3>
-                <h4 class="service-card-subtitle">Access and visualize your business data to drive actions, make decisions and take possession of your unfaire advantage</h4>
-                <ul class="service-card-list">
-                    <li>Collect, clean, transform and data for analytics</li>
-                    <li>Data reporting and visualization in Excel, Looker, PowerBi, Tableau, BigQuery</li>
-                    <li>Customers behavior analytics and predictions</li>
-                    <li>Stock and inventory analysis, optimization and reporting</li>
-                </ul>
-                <div class="analyics-reporting-visualization-icon">
-                    <i class="vscode-icons--file-type-excel"></i>
-                    <i class="logos--microsoft-power-bi"></i>
-                    <i class="logos--looker"></i>
-                    <i class="logos--tableau-icon"></i>
-                    <i class="tabler--brand-google-big-query"></i>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <span class="carbon--software-resource-cluster"></span>
-                </div>
-                <h3 class="service-card-title">Product Information Management (PIM)</h3>
-                <h4 class="service-card-subtitle">Leverage product data to drive conversion and revenue, create a best-in-class user experience and feed your organization with accurate information</h4>
-                <ul class="service-card-list">
-                    <li>Collect, harmonize and fill product information: title, description, attributes, etc</li>
-                    <li>Organize an accurate product catalog and facetings</li>
-                    <li>Implement PIM system and connect it with your organization</li>
-                    <li>Analytics and reporting on product information</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">  
-                    <span class="iconoir--star"></span>
-                </div>
-                <h3 class="service-card-title">Custom request</h3>
-                <h4 class="service-card-subtitle" style="text-align: center;">Feel free to reach out if you have specific needs. We'd be happy to help!</h4>
-            </div>
-        </div>
-    </section>
-
-    <section id="meet-jonathan">
-        <h2>Meet Jonathan, your fractional CMO</h2>
-        <div style="display: flex; align-items: center; justify-content: center; text-align: left;">
-            <div style="max-width: 600px; margin-right: 20px;">
-                <p style="font-weight: bold;">Are you looking for a result-oriented and data-driven partner? Let’s work together to fuel your growth and achieve measurable results!</p>
-                <p>After relocating to Vancouver Island, BC from Belgium in spring 2023, I wanted to continue living by my passion: leveraging data and marketing technics to help organizations enhance their performance, efficency and level of execution.</p>
-                <p>With over 6 years of experience in planning and executing data-driven marketing strategy, I have helped businesses generate millions in online sales and optimized user experience to boost conversion. I thrive on solving complex business challenges and delivering lasting value to your clients. I believe in the power of data, providing a holistic view of your business's past, present, and future.</p>
-                <p>I will leverage my knowledge in digital marketing, data analytics, work automation, e-commerce conversion and more to fuel your growth and unlock new potentials.</p>
-                <p>I graduated with Great Honour from a Master's in Business Engineering, focusing on data analytics and finance from ICHEC Brussels Management School of Business. I've gained extensive industry knowledge through various roles in Europe and Canada as analyst and E-Commerce Manager for top retailers abd leading B2B distributors. Outside of work, I enjoy cooking, baking, and exploring the beautiful outdoors of British Columbia.</p>
-                <p>Thank you for your interest!</p>
-            </div>
-            <img src="assets/picture_jonathan_verschaeve.jpeg" alt="jonathan-verschaeve-fraction-cmo" style="max-width: 300px; height: auto; border-radius: 5px;">
-        </div>
-    </section>
-
-    <section id="benefit-fees">
-        <h2 style="text-align: center;">How can I help your business</h2>
-
-        <div class="faq">
-            <h3 class="faq-question">Why should you work with a fractional CMO in the first place?
-                <span class="faq-line"></span>
-            </h3>
-            <div class="faq-answer" style="display: block;">
-                <p>A Fractional Chief Marketing Officer (fCMO) is a senior marketing executive who works on a part-time or contract basis with businesses, usually small and medium-sized businesses (SMBs). As a fractional CMO, I will provide leadership and expertise on projects without the long-term commitment or expense associated with a permanent hire. This role allows businesses to access high-level marketing skills, develop tailored strategies, and implement effective marketing initiatives while maintaining flexibility and cost efficiency.</p>
-            </div>
-        </div>
-        
-        <div class="faq">
-            <h3 class="faq-question">Benefits for SMBs to works with me as your fractional CMO
-                <span class="faq-line"></span>
-            </h3>
-            <div class="faq-answer">
-                <ul>
-                    <li><strong>Cost-Effective Expertise:</strong> I provide high-level marketing leadership and execution at a fraction of the cost of a full-time CMO.</li>
-                    <li><strong>Flexibility and Scalability:</strong> as your business needs evolve, I can adjust my involvement accordingly. Whether you need part-time support during a busy season or a more hands-on approach for a specific project, the flexibility is unmatched.</li>
-                    <li><strong>Tailored for your needs and size:</strong> whether you are multitasking between owner and marketer or already have a marketing team in place, I will backup your marketing effort and fit to your company needs and size.</li>
-                    <li><strong>Tools and Technology Expertise:</strong> Benefit from my extensive experience with CRM, ERP, data visualization, emailing plateforms, Google Analytics, scripting language&mdash;and more! I can quickly implement and train your team on essential tools!</li>
-                    <li><strong>Focus on Core Business:</strong> By outsourcing your marketing leadership, you can concentrate on what you do best—running your business. I will take on the marketing burden, allowing you to focus on operations and growth.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="faq">
-            <h3 class="faq-question">How do we work together?
-                <span class="faq-line"></span>
-            </h3>
-            <div class="faq-answer">
-                <p>You feel like you might need help in your marketing effort? Great, I'd be more than happy to help your organization thrive.</p>
-                <p>We'll first go over your needs and how I can help on a free discovery call. Next, we'll define your goals, budget and how success can be measured for your orgnizations. Then, it's time to get to work and achieve successful results!</p>
-            </div>
-        </div>
-
-        <div class="faq">
-            <h3 class="faq-question">For who and how much does it cost?
-                <span class="faq-line"></span>
-            </h3>
-            <div class="faq-answer">
-                <p>I primarly work with family-owned and small to medium-sized businesses&mdash;typically $1-20M in annual sales. This is usually the best timing for a business to hire a partial CMO to implement and execute projects, without the cost of a full-time executive, averaging $150-200k per year. I work with businesses located in North America, France and Benelux.</p>
-                <p>Pricing varies based on project scope and the evolvment. Most clients invest with me between $2,000 to $5,000 per month, with hourly rate ranging from $120 to $200.</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div style="text-align: center;">
-            <h2 id="contact-form">Make contact</h2>
-            <h3>Send a request for a free discovery call. Let's turn your marketing challenges into growth opportunities!</h3>
-        </div>
-        <div class="form-container">
-            <form onsubmit="contactForm(event)">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="company">Company:</label>
-                <input type="text" id="company" name="company">
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="7" required></textarea>
-
-                <button type="submit" name="button" value="submit" onclick="run(this);return false;">Send request for a free discovery call</button>
-            </form>
-        </div>
-    </section>
-
-<footer>
-    <div class="footer-container" style="display: flex; align-items: flex-start;">
-        <div class="footer-column" style="text-align: left; margin-left: 30px;">
-            <h3>Contact Information</h3>
-            <p><a href="mailto:your-email@example.com">jonathanverschaeve94@gmail.com</a></p>
-            <p><a href="tel:+15874361422">+1 (587) 436-1422</a></p>
-            <address style="font-style: normal;">3390 Glenora Rd,<br>V9L 6S1 Duncan<br>British Columbia, Canada</address>
-            <div class="social-media-link" style="margin-top: 20px;">
-                <a href="https://www.linkedin.com/in/verschaeve-jonathan/" target="_blank"><i style="font-size:36px" class="fa">&#xf08c;</i></a>
-                &nbsp;
-                <a href="https://github.com/jlv94" target="_blank"><i style="font-size:36px" class="fa">&#xf09b;</i></a>
-            </div>
-        </div>
-        <div class="footer-column" style="text-align: center; margin: 30px;">
-            <h3>Services & Expertise</h3>
-            <p style="font-weight: 700;">Unlock Growth for Your Business With a Fractional CMO</p>
+        <nav class="navigation">
             <ul>
-                <li>E-Commerce Conversion Optimization</li>
-                <li>Customer Value Optimization</li>
-                <li>Digital Marketing: SEO, SEA, PPC, Email</li>
-                <li>Data Prepartion & Analytics</li>
-                <li>Reporting and Data Visualization</li>
-                <li>Product Information Management (PIM)</li>
-                <li>Work Automation</li>
+                <li><a href=#>Menu #1</a></li>
+                <li><a href=#>Menu #2</a></li>
+                <li><a href=#>Menu #3</a></li>
             </ul>
-        </div>
-        <div class="footer-column" style="text-align: center; margin: 30px;">
-            <h3>Free Discovery Call</h3>
-            <button onclick="window.location.href='#contact-form';" style="background: white; color: #1E4663;">Make Contact</button>
-        </div>
+        </nav>
+    </div> 
+</menu>
+
+<body>
+    <div class="container center">
+        <section id="fractional-cmo">
+            <header>
+                <h1>Unlock growth for your business with a fractional CMO</h1>
+            </header>
+            <header>
+                <h2>Turn your marketing challenges into opportunites!</h2>
+            </header>
+            <span>
+                <h3>Are you a small to medium-sized business owner facing marketing challenges?<br>Access top-tier expertise and execution with a fractional Chief Marketing Officer, without the overhead of a full-time executive.</h3>
+                <h4>E-Commerce Conversion&ensp;&mdash;&ensp;Digital Marketing&ensp;&mdash;&ensp;Data Analytics & Reporting&ensp;&mdash;&ensp;Work Automation</h4>
+            </span>
+            <button class="btn cta" onclick="window.location.href='#contact-form'" >
+                Book a Free Discovery Call
+            </button>
+        </section>
     </div>
-    <div style="display: flex; justify-content: center;">
-        <p>&copy; <script>document.write(new Date().getFullYear());</script> EFTE Inc. All rights reserved.</p>
+
+    <div class="container center">
+        <section id="services-expertise">
+            <header>
+                <h2>Fractional CMO services and expertise</h2>
+            </header>
+            <span>
+                <h3>Businesses face unique challenges in marketing strategy and execution, improving e-commerce conversion or leverage their data to make decisions to increase top-and-bottom lines. These topics limit your potential to grow and even prevent you from excelling in a competitive marketplace.</h3>
+            </span>
+            <span>
+                <h3 style="font-weight: 600; padding-top: 20px;">Explore our areas of expertise and let us help you lead and execute your marketing projects to fuel your organization!</h3>
+            </span>
+            <div class="grid-container">
+                <div class="grid-card">
+                    <div class="service-icon">
+                        <span class="service-cro"></span>
+                    </div>
+                    <span>
+                        <h3 class="service-card-title">Conversion Rate Optimization (CRO)</h3>
+                        <h4 class="service-card-subtitle">Drive revenue, optimize conversion rate and improve users experience of your e-commerce website</h4>
+                        <span class="line"></span>
+                        <ul class="service-card-list">
+                            <li>Drive engagement on your pages: home page, landing page, product page</li>
+                            <li>Optimize conversion at funnel and basket</li>
+                            <li>Improve website speed and performance</li>
+                            <li>Implement customization and increase user experience</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="grid-card">
+                    <div class="service-icon">
+                        <span class="service-digital-marketing"></span>
+                    </div>
+                    <span>
+                        <h3 class="service-card-title">Digital Marketing</h3>
+                        <h4 class="service-card-subtitle">Convert leads into loyal customers by leveraging various digital channels with targeted and cost-effective campaigns</h4>
+                        <ul class="service-card-list">
+                            <li>Organic outreach and Google ranking: improve your SEO and Search strategy to drive more traffic</li>
+                            <li>Cost-effective paid traffic: improve your ROAS on paid traffic (SEA) and social media traffic</li>
+                            <li>Email traffic: increase conversion rate, optimize segmentation, build campaigns automation</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="grid-card">
+                    <div class="service-icon">
+                        <span class="service-cvo"></span>
+                    </div>
+                    <span>
+                        <h3 class="service-card-title">Customer Value Optimization (CVO)</h3>
+                        <h4 class="service-card-subtitle">Segment and understand your customer base, leverage a customized offering to increase your customer dollar-value</h4>
+                        <ul class="service-card-list">
+                            <li>Increase your Average Order Value</li>
+                            <li>Improve retention rate and customer loyalty</li>
+                            <li>Leverage your customers value with data-driven segmentation</li>
+                            <li>Implement customer reviews strategy</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="grid-card">
+                    <div class="service-icon">
+                        <span class="service-analytics"></span>
+                    </div>
+                    <span>
+                        <h3 class="service-card-title">Analytics, Reporting and Visualization</h3>
+                        <h4 class="service-card-subtitle">Access and visualize your business data to drive actions, make decisions and take possession of your unfaire advantage</h4>
+                        <ul class="service-card-list">
+                            <li>Collect, clean, and transform data for analytics</li>
+                            <li>Data reporting and visualization in Excel, Looker, PowerBi, Tableau, BigQuery</li>
+                            <li>Customers behavior analytics and predictions</li>
+                            <li>Stock and inventory analysis, optimization and reporting</li>
+                        </ul>
+                        <div class="analyics-reporting-visualization-icon">
+                            <i class="logo-excel"></i>
+                            <i class="logo-powerbi"></i>
+                            <i class="logo-looker"></i>
+                            <i class="logo-tableau"></i>
+                            <i class="logo-bigquery"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="grid-card">
+                    <div class="service-icon">
+                        <span class="service-pim"></span>
+                    </div>
+                    <span>
+                         <h3 class="service-card-title">Product Information Management (PIM)</h3>
+                        <h4 class="service-card-subtitle">Leverage product data to drive conversion and revenue, create a best-in-class user experience and feed your organization with accurate information</h4>
+                        <ul class="service-card-list">
+                            <li>Collect, harmonize and fill product information: title, description, attributes, etc</li>
+                            <li>Organize an accurate product catalog and facetings</li>
+                            <li>Implement PIM system and connect it with your organization</li>
+                            <li>Analytics and reporting on product information</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="grid-card">
+                    <div class="service-icon">  
+                        <span class="service-customer"></span>
+                    </div>
+                    <span>
+                        <h3 class="service-card-title">Custom request</h3>
+                        <h4 class="service-card-subtitle" style="text-align: center;">Feel free to reach out if you have specific needs. We'd be happy to help!</h4>
+                    </span>
+                </div>
+            </div>
+        </section>
     </div>
-</footer>
+
+    <div class="container center">
+        <section id="meet-jonathan">
+            <header>
+                <h2>Meet Jonathan, your fractional CMO</h2>
+            </header>
+            <span>
+                <h3>Are you looking for a result-oriented and data-driven partner?</h3>
+                <h3>Let’s work together to fuel your growth and achieve measurable results!</h3>
+            </span>
+             <span>
+                    <p>With over 6 years of experience in planning and executing data-driven marketing strategy, I have helped businesses generate millions in online sales and optimized user experience to boost conversion. I thrive on solving complex business challenges and delivering lasting value to clients and organizations.</p>
+                    <p>I will leverage my expertise to fuel your growth from strategy to execution of projects and with an holistic understanding of digital tools, data and marketing across an organization.</p>
+                    <p>After relocating to Vancouver Island from Belgium in spring 2023, I wanted to continue living by my passion: leveraging data and marketing technics to help organizations gain more customers-value by enhancing their performance, efficency and level of execution.</p>
+                    <p>I graduated with Great Honour from a Master's in Business Engineering, focusing on data analytics and finance from ICHEC Brussels Management School of Business. I've gained extensive and practical knowledge in E-Commerce and Data Analytics, through various roles in Europe and Canada. I enjoy cooking, baking, and exploring the  outdoors of Beautiful British Columbia.</p>
+                    <p>Thank you for your interest. Let's get in touch!</p>
+                </span>
+                <img src="assets/picture_jonathan_verschaeve.jpeg" alt="jonathan-verschaeve-fraction-cmo" style="max-width: 300px; height: auto; border-radius: 5px; padding-left: 50px;">
+        </section>
+    </div>
+
+    <div class="container center">
+        <section id="benefit-fees">
+            <header>
+                <h2>How can I help your business</h2>
+            </header>
+            <div class="faq">
+                <div class="faq-question" id="why-work-with-fcmo">
+                    <h3>Why should you work with a fractional CMO in the first place?</h3>
+                    <div class="faq-separator">
+                        <span class="faq-line"></span>
+                        <span class="faq-plus">&nbsp;+</span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>A Fractional Chief Marketing Officer (fCMO) is a senior marketing executive who works on a part-time or contract basis with businesses, usually small and medium-sized businesses (SMBs).<br>As a fractional CMO, I will provide leadership and expertise on projects without the long-term commitment or expense associated with a permanent hire. This role allows businesses to access high-level marketing skills, develop tailored strategies, and implement effective marketing initiatives while maintaining flexibility and cost efficiency.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>What are the benefits for SMBs to work with me as a fractional CMO?</h3>
+                    <div class="faq-separator">
+                        <span class="faq-line"></span>
+                        <span class="faq-plus">&nbsp;+</span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <ul>
+                        <li><strong>Cost-Effective Expertise:</strong> I provide high-level marketing leadership and execution at a fraction of the cost of a full-time CMO.</li>
+                        <li><strong>Flexibility and Scalability:</strong> as your business needs evolve, I can adjust my involvement accordingly. Whether you need part-time support during a busy season or a more hands-on approach for a specific project, the flexibility is unmatched.</li>
+                        <li><strong>Tailored for your needs and size:</strong> whether you are multitasking between owner and marketer or already have a marketing team in place, I will backup your marketing effort and fit to your company needs and size.</li>
+                        <li><strong>Tools and Technology Expertise:</strong> Benefit from my extensive experience with CRM, ERP, data visualization, emailing plateforms, Google Analytics, scripting language&mdash;and more! I can quickly implement and train your team on essential tools!</li>
+                        <li><strong>Focus on Core Business:</strong> By outsourcing your marketing leadership, you can concentrate on what you do best—running your business. I will take on the marketing burden, allowing you to focus on operations and growth.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>How do we work together?</h3>
+                    <div class="faq-separator">
+                        <span class="faq-line"></span>
+                        <span class="faq-plus">&nbsp;+</span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>You feel like you might need help in your marketing effort? Great, I'd be more than happy to help your organization thrive.</p>
+                    <p>We'll first go over your needs and how I can help on a free discovery call. Next, we'll define your goals, budget and how success can be measured for your orgnizations. Then, it's time to get to work and achieve successful results!</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-question">
+                    <h3>For who and how much does it cost?</h3>
+                    <div class="faq-separator">
+                        <span class="faq-line"></span>
+                        <span class="faq-plus">&nbsp;+</span>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>I primarly work with family-owned and small to medium-sized businesses&mdash;typically $1-20M in annual sales. This is usually the best timing for a business to hire a partial CMO to implement and execute projects, without the cost of a full-time executive, averaging $150-200k per year. I work with businesses located in North America, France and Benelux.</p>
+                    <p>Pricing varies based on project scope and the evolvment. Most clients invest with me between $2,000 to $5,000 per month, with hourly rate ranging from $120 to $200.</p>
+                </div>
+            </div>
+        </section>
+        </section>
+    </div>
+    
+    <div class="container center">
+        <section id="contact-form">
+            <header>
+                <h2>Make contact and send your request</h2>
+            </header>
+            <span>
+                <h3>
+                    Send a request for a free discovery call. Let's turn your marketing challenges into growth opportunities!
+                </h3>
+            </span>
+            <div class="form">
+                <form onsubmit="contactForm(event)">
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="company">Company:</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="10" required></textarea>
+                    </div>
+
+                    <button class="btn" type="submit" name="button" value="submit" onclick="run(this);return false;">Send request for a free discovery call</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-column">
+                <h3>Contact</h3>
+                <p>
+                    <a href="mailto:your-email@example.com">jonathanverschaeve94@gmail.com</a>
+                    <br>
+                    <a href="tel:+15874361422">+1 (587) 436-1422</a>
+                </p>
+                <p>
+                    <address>3390 Glenora Rd,<br>V9L 6S1 Duncan<br>British Columbia, Canada</address>
+                </p>
+                <div class="social-media-link">
+                    <a href="https://www.linkedin.com/in/verschaeve-jonathan/" target="_blank"><i class="fa">&#xf08c;</i></a>
+                    &nbsp;
+                    <a href="https://github.com/jlv94" target="_blank"><i class="fa">&#xf09b;</i></a>
+                </div>
+            </div>
+            <div class="middle-column">
+                <h3>Services & Expertise</h3>
+                <ul>
+                    <li>E-Commerce Conversion Optimization</li>
+                    <li>Customer Value Optimization</li>
+                    <li>Digital Marketing: SEO, SEA, PPC, Email</li>
+                    <li>Data Prepartion & Analytics</li>
+                    <li>Reporting and Data Visualization</li>
+                    <li>Product Information Management (PIM)</li>
+                    <li>Work Automation</li>
+                    <li>Custom Requests</li>
+                </ul>
+            </div>
+            <div class="right-column">
+                <h3>Free Discovery Call</h3>
+                <button class="btn" onclick="window.location.href='#contact-form';">Send Request</button>
+            </div>
+        </div>
+        <div class="footer-credit">
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> &mdash; DIGITAL MAKINA Inc. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-</html>
