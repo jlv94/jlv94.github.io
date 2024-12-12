@@ -10,7 +10,7 @@ async function contactForm(event) {
         }
 
     try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbyNu5dHPO5jGcc7-6pQT95qyyqwDCJ1GVOcHH504zIbE2lbNu-bIuWQoBmBZvC8JrI4/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbxvNJIjs7XC97d-iT6nek9EOGfmbGulFMYzZiXVaLZHDvNTNT8GVqCOXLHZdOyCmrpn/exec', {
             method: 'POST',
             body: params
         });
