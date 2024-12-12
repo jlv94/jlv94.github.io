@@ -21,7 +21,6 @@
     </script>
     <!-- JavaScript Files -->
     <script src="js/form.js"></script>
-    <!-- <script src="js/faq_open.js"></script> -->
     <script>
         function toggleMenu() {
             var menu = document.querySelector('.navigation');
@@ -283,8 +282,8 @@
                     <h3>Make contact with us and send your request for a free discovery call!</h3>
                 </span>
 
-                <div class="form">
-                    <form onsubmit="contactForm(event)">
+                <form onsubmit="contactForm(event)">
+                    <div class="form">
                         <div class="form-row">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" required>
@@ -324,9 +323,9 @@
                             <label for="message">Message:</label>
                             <textarea id="message" name="message" rows="10" required></textarea>
                         </div>
-                    </form>
-                </div>
-                <button class="btn" type="submit" name="button" value="submit" onclick="run(this);return false;">Send request for a free discovery call</button>
+                    </div>
+                    <button class="btn" type="submit" name="button" value="submit" onclick="run(this);return false;">Send request for a free discovery call</button>
+                </form>
             </div>
     </section>
 </main>
