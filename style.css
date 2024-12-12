@@ -182,6 +182,7 @@ p {
    display: block;
    content: '';
    transition: width 0.5s ease-in-out;
+   cursor: pointer;
 }
 
 .btn:hover:after {
@@ -510,13 +511,11 @@ address {
    
    h2 {
       font-size: 1.5rem;
-      /* padding-inline: 0; */
    }
    
    h3 {
       font-size: 1.1rem;
       padding-inline: 1rem;
-      
       padding-block: none;
    }
    
@@ -561,10 +560,39 @@ address {
       border: solid 2px var(--color-grey);
    }
 
+   .grid-card h3 {
+      line-height: 2.4rem;
+      }
+
    .grid-card:hover {
       transform: none;
    }
-
+   .faq-qestion-answer {
+      display: grid;
+      background-color: var(--color-blue);
+      margin: 2rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      grid-template-rows: auto 0fr;
+      transition: grid-template-rows 500ms ease;
+  }
+  
+  .faq-qestion-answer:hover,
+  .faq-qestion-answer:focus-within {
+      grid-template-rows: auto 1fr; /* Show the answer when hovering or focused */
+  }
+  
+  .faq-answer {
+      padding-block: 0;
+      opacity: 0;
+      transition: opacity 1000ms ease;
+  }
+  
+  .faq-qestion-answer:hover .faq-answer,
+  .faq-qestion-answer:focus-within .faq-answer {
+      opacity: 1; /* Fade in the answer when hovering or focused */
+  }
+   /*
    .faq-container {
       display: inline;
    }
@@ -573,6 +601,10 @@ address {
       padding-inline: 0rem;
       margin-inline: 0rem;
    }
+
+   .faq-qestion-answer:focus-within {
+      grid-template-rows: auto 1fr;
+  }
 
    .faq-question {
       padding-block: 0rem;
@@ -583,6 +615,7 @@ address {
    .faq-container li, p {
       font-size: 1rem;
    }
+      */
 
    #btn-banner {
       margin-top: 0;
@@ -603,6 +636,11 @@ address {
       font-size: 0.9rem;
    }
 
+   .form input, textarea {
+      font-size: 16px;
+      line-height: 1.5;
+   }
+
    .form .label-checkbox {
       display: inline;
       align-items: left;
@@ -610,7 +648,6 @@ address {
       justify-content: center;
       padding-left: 0rem;
       padding-right: 0;
-
    }
 
    .label-checkbox label {
