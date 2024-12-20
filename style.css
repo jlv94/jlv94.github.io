@@ -242,12 +242,12 @@ p {
 }
 
 .service-card-see-more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin-top: 0;
-    font-size: 0.9rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   margin-top: 0;
+   font-size: 0.9rem;
 }
 .service-card-toggle-arrow {
    cursor: pointer;
@@ -323,12 +323,12 @@ p {
 
 .faq-qestion-answer:hover,
 .faq-qestion-answer:focus-within {
-    grid-template-rows: auto 1fr;
+   grid-template-rows: auto 1fr;
 }
 
 .faq-qestion-answer:hover .faq-answer,
 .faq-qestion-answer:focus-within .faq-answer {
-    opacity: 1; /* Fade in the answer when hovering or focused */
+   opacity: 1; /* Fade in the answer when hovering or focused */
 }
 
 .faq-container h3 {
@@ -469,8 +469,8 @@ address {
    margin: 0;
 }
 
-.social-media-link {
-   font-size: 3rem;
+.social-media-link a {
+   font-size: 2rem;
 }
 
 .container-footer .btn {
@@ -484,12 +484,17 @@ address {
    width: 0;
 }
 
+.social-media-link {
+   font-size: 3rem;
+}
+
+
 
 /* ==========================
    Media: Mobile
 ========================== */
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
    .menu {
       display: flex;
       justify-content: space-between;
@@ -623,16 +628,15 @@ address {
    }
 
    .faq-qestion-answer {
-      display: flex;
+      display: inline;
       justify-content: center;
       align-items: center;
       flex-flow: column wrap;
       flex-direction: column;
       align-content: center;
-      background-color: var(--color-blue);
-      margin-inline: 2rem;
+      margin-inline: 0rem;
       padding-inline: 1rem;
-      border-radius: 0.5rem;
+      border-radius: 5;
       grid-template-rows: auto 0fr;
       transition: grid-template-rows 500ms ease;
   }
@@ -658,6 +662,14 @@ address {
       padding-inline: 0rem;
       opacity: 0;
       transition: opacity 1000ms ease;
+      background-color: var(--color-blue);
+      border-radius: 5px;
+      margin-inline: 0rem;
+      padding-inline: 1rem;
+   }
+
+   .faq-answer p {
+      padding-inline: 0rem;
    }
 
   .faq-qestion-answer:hover .faq-toggle-icon,
