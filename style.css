@@ -211,7 +211,7 @@ p {
    padding-inline: min(10vw, 1rem);
    background-color: #fff;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   transition: transform 0.2s;
+   transition: transform 0.2s;   
 }
 
 .grid-card:hover {
@@ -350,6 +350,10 @@ p {
    list-style-type: disc; 
    line-height: 2rem;
    font-size: 1rem;
+}
+
+.faq-toggle-icon {
+   display: none;
 }
 
 /* ==========================
@@ -546,6 +550,8 @@ address {
    
    h2 {
       font-size: 1.5rem;
+      line-height: 2.5rem;
+      padding-inline: 1rem;
    }
    
    h3 {
@@ -588,11 +594,15 @@ address {
       flex-flow: column wrap;
       flex-direction: column;
       align-content: center;
-      padding: 10px;
+      padding: 1rem;
    }
 
    .grid-card {
       border: solid 2px var(--color-grey);
+   }
+
+   .service-card-subtitle {
+      padding-inline: 0;
    }
 
    .grid-card h3 {
@@ -602,56 +612,59 @@ address {
    .grid-card:hover {
       transform: none;
    }
+
+   .faq-container {
+      padding-inline: 0;
+      padding-block: 0rem;
+   }
+
+   .faq-container h2 {
+      line-height: 1rem;
+   }
+
    .faq-qestion-answer {
-      display: grid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      flex-direction: column;
+      align-content: center;
       background-color: var(--color-blue);
-      margin: 2rem;
-      padding: 1rem;
+      margin-inline: 2rem;
+      padding-inline: 1rem;
       border-radius: 0.5rem;
       grid-template-rows: auto 0fr;
       transition: grid-template-rows 500ms ease;
   }
   
-  .faq-qestion-answer:hover,
-  .faq-qestion-answer:focus-within {
-      grid-template-rows: auto 1fr; /* Show the answer when hovering or focused */
+  .faq-question {
+      position: relative;
+      padding-inline: 0rem;
   }
   
+  .faq-toggle-icon {
+      display: inline-block;
+      position: absolute;
+      right: 1rem;
+      bottom: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+   }
+   
   .faq-answer {
+      display: none;
       padding-block: 0;
+      padding-inline: 0rem;
       opacity: 0;
       transition: opacity 1000ms ease;
+   }
+
+  .faq-qestion-answer:hover .faq-toggle-icon,
+  .faq-qestion-answer:focus-within .faq-toggle-icon {
+      content: "-";
   }
   
-  .faq-qestion-answer:hover .faq-answer,
-  .faq-qestion-answer:focus-within .faq-answer {
-      opacity: 1; /* Fade in the answer when hovering or focused */
-  }
-   /*
-   .faq-container {
-      display: inline;
-   }
-
-   .faq-qestion-answer {
-      padding-inline: 0rem;
-      margin-inline: 0rem;
-   }
-
-   .faq-qestion-answer:focus-within {
-      grid-template-rows: auto 1fr;
-  }
-
-   .faq-question {
-      padding-block: 0rem;
-      padding-inline: 0rem;
-      outline: none
-   }
-
-   .faq-container li, p {
-      font-size: 1rem;
-   }
-      */
-
    #btn-banner {
       margin-top: 0;
    }

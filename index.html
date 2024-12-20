@@ -222,7 +222,7 @@
                     <h3>Are you looking for a professonial partner to drive your growth from strategy to execution?</h3>
                     <h4>
                         At Digital Makina, we help you achieve your projects with success, by taking a holistic approach to your organization needs.
-                        We sit at the crossing of Marketing, Data and Automation and we deliver high-quality services with an obsession for impact, efficency and value for our custtomers.
+                        <br>We sit at the crossing of Marketing, Data and Automation and we deliver high-quality services with an obsession for success, efficency and value for our custtomers.
                     </h4>
                 </span>
             </div>
@@ -230,6 +230,7 @@
                 <div class="faq-qestion-answer">
                     <div class="faq-question" id="why-work-with-fcmo" tabindex="0">
                         <h3>What is a fractional CMO?</h3>
+                        <span class="faq-toggle-icon">+</span>
                     </div>
                     <div class="faq-answer">
                         <p>A Fractional Chief Marketing Officer (fCMO) is a senior marketing executive who works on a part-time or contract basis with businesses, usually small and medium-sized businesses (SMBs).<br>As a fractional CMO, I will provide leadership and expertise on projects without the long-term commitment or expense associated with a permanent hire. This role allows businesses to access high-level marketing skills, develop tailored strategies, and implement effective marketing initiatives while maintaining flexibility and cost efficiency.</p>
@@ -238,6 +239,7 @@
                 <div class="faq-qestion-answer" tabindex="0">
                     <div class="faq-question">
                         <h3>What are the benefits for SMBs to work with me as a fractional CMO?</h3>
+                        <span class="faq-toggle-icon">+</span>
                     </div>
                     <div class="faq-answer">
                         <ul>
@@ -252,6 +254,7 @@
                 <div class="faq-qestion-answer" tabindex="0">
                     <div class="faq-question">
                         <h3>How do we work together?</h3>
+                        <span class="faq-toggle-icon">+</span>
                     </div>
                     <div class="faq-answer">
                         <p>You feel like you might need help in your marketing effort? Great, I'd be more than happy to help your organization thrive.</p>
@@ -261,6 +264,7 @@
                 <div class="faq-qestion-answer" tabindex="0">
                     <div class="faq-question">
                         <h3>Is my business ready to work with a fractional CMO?</h3>
+                        <span class="faq-toggle-icon">+</span>
                     </div>
                     <div class="faq-answer">
                         <p>I primarly work with family-owned and small to medium-sized businesses&mdash;grossing $1-20M in annual sales</p>
@@ -270,14 +274,19 @@
                 <div class="faq-qestion-answer" tabindex="0">
                     <div class="faq-question">
                         <h3>How much does it cost?</h3>
+                        <span class="faq-toggle-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Pricing varies based on project scope and the evolvment. Most clients invest with me between $2,000 to $5,000 per month, with hourly rate ranging from $120 to $200. I provide services in French or English with businesses located in Vancouver Island and across Canada.</p>
+                        <p>
+                            Pricing varies based on the project scope and its development. Working with a fractional CMO allows you to very flexible on the cost structure too&mdash;getting 100% value for every dollar spent.
+                            <br>Depending on the project, our clients pay per project or a hourly rate. Typically, projects range from $1,000 to $5,000 and hourly rate are at $120. We support our services in French or English for businesses located in Vancouver Island and across Canada.
+                        </p>
                     </div>
                 </div>
                 <div class="faq-qestion-answer" tabindex="0">
                     <div class="faq-question">
                         <h3>More over our team</h3>
+                        <span class="faq-toggle-icon">+</span>
                     </div>
                     <div class="faq-answer">
                         <span>
@@ -394,6 +403,7 @@
     </footer>
 </body>
 <script>
+
 function toggleList(seeMoreDiv) {
     const list = seeMoreDiv.nextElementSibling; // Get the next sibling (the list)
     const arrow = seeMoreDiv.querySelector('.service-card-toggle-arrow'); // Get the arrow within the see-more div
@@ -412,5 +422,30 @@ function toggleList(seeMoreDiv) {
         arrow.classList.add('active'); // Add active class to rotate the arrow
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth <= 600) {
+        const faqQuestions = document.querySelectorAll('.faq-qestion-answer');
+
+        faqQuestions.forEach(faq => {
+            const answer = faq.querySelector('.faq-answer');
+            const icon = faq.querySelector('.faq-toggle-icon');
+
+            // Ensure the answer is hidden by default
+            answer.style.display = 'none';
+            icon.textContent = '+';
+
+            faq.addEventListener('click', function() {
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    answer.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+    }
+});
 </script>
 </html>
